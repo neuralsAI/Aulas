@@ -3,7 +3,8 @@
 <head>
 
     <!-- CSS only -->
-    <link rel="stylesheet" href="./css/style.css">
+    <title> IA Neurals</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
@@ -12,7 +13,7 @@
 <body>
 
     <nav class="navbar navbar-dark bg-dark px-5">
-        <a class="navbar-brand" href="#">IA Neurals</a>
+        <a class="navbar-brand" href="index.html">IA Neurals</a>
         <a class="navbar-brand" href="index.html">Voltar</a>
     </nav>
 
@@ -72,19 +73,13 @@
         </ul>
 
         <h3> Percepção </h3>
-        ```diff
-        - ESCREVER SOBRE
-        ```
+        <div class="p-3 mb-2 bg-danger text-white"> ESCREVER SOBRE</div>
 
         <h3> Cognição </h3>
-        ```diff
-        - ESCREVER SOBRE
-        ```
+        <div class="p-3 mb-2 bg-danger text-white"> ESCREVER SOBRE</div>
 
         <h3> Experiência </h3>
-        ```diff
-        - ESCREVER SOBRE
-        ```
+        <div class="p-3 mb-2 bg-danger text-white"> ESCREVER SOBRE</div>
         <h3> Aprendizado </h3>
         <p>
             Aprendizado é o processo pelo qual as competências, habilidades ou conhecimentos são adquiridos ou
@@ -96,9 +91,8 @@
         </p>
 
         <h3> Experiência </h3>
-        ```diff
-        - ESCREVER SOBRE
-        ```
+        <div class="p-3 mb-2 bg-danger text-white"> ESCREVER SOBRE</div>
+
         <h3> Inteligência artificial </h3>
         <p>
             Abordagens do estudo de inteligência artificial se dividem em 4 categorias:
@@ -116,17 +110,20 @@
             complexo).
         </p>
 
-        ```diff
-        - COLOCAR O FRAMEWORK AQUI
-        ```
 
-        1. Busca
-        2. Conhecimento
-        3. Experiência
+        <div class="p-3 mb-2 bg-danger text-white"> COLOCAR FRAMEWORK AQUI</div>
 
-        - Busca + Estudo = Conhecimento
-        - Conhecimento + Aprendizagem = Experiência
-        - Experiência + Treino = Busca
+        <ul>
+            <li> Busca </li>
+            <li> Conhecimento </li>
+            <li> Experiência </li>
+        </ul>
+
+        <ol>
+            <li> Busca + Estudo = Conhecimento </li>
+            <li> Conhecimento + Aprendizagem = Experiência </li>
+            <li> Experiência + Treino = Busca </li>
+        </ol>
 
         <h3> Inferência indutiva </h3>
         <p>
@@ -194,16 +191,136 @@
             <strong>Meta:</strong> Induzir hipóteses para fazer diagnósticos corretos para novos pacientes
         </p>
 
-        |Id. |Nome |Idade |Sexo |Peso |Manchas |Temp. |# Int. |Est. |Diagnóstico
-        |-|-|-|-|-|-|-|-|-|-|
-        |4201 |Igor |28 |M |79 |Concentradas |38.0 |2 |SP |Doente
-        |3217 |Moutinha |18 |F |67 |Inexistentes |39.5 |4 |MG |Doente
-        |4039 |Perot |49 |M |92 |Espalhadas |38.0 |2 |RS |Saudável
-        |1920 |Tonin |18 |M |43 |Inexistentes |38.5 |8 |MG |Doente
-        |4340 |Tuzinha |21 |F |52 |Uniformes |37.6 |1 |PE |Saudável
-        |2301 |Icara |22 |F |? |Inexistentes |38.0 |3 |RJ |Doente
-        |1322 |Vitinha |19 |F |87 |Espalhadas |39.0 |6 |AM |Doente
-        |3027 |Gabriel |34 |M |67 |Uniformes |38.4 |2 |GO |Saudável
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col">Peso</th>
+                    <th scope="col">Manchas</th>
+                    <th scope="col">Temperatura</th>
+                    <th scope="col">N&ordm; Int</th>
+                    <th scope="col">Est.</th>
+                    <th scope="col">Diagn&oacute;stico</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">4201</th>
+                    <td>Igor</td>
+                    <td>28</td>
+                    <td>M</td>
+                    <td>79</td>
+                    <td>Concentradas</td>
+                    <td>38.0</td>
+                    <td>2</td>
+                    <td>SP</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">3217</th>
+                    <td>Moutinha</td>
+                    <td>18</td>
+                    <td>F</td>
+                    <td>67</td>
+                    <td>Inexistentes</td>
+                    <td>39.5</td>
+                    <td>4</td>
+                    <td>MG</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">4039</th>
+                    <td>Perot</td>
+                    <td>49</td>
+                    <td>M</td>
+                    <td>92</td>
+                    <td>Espalhadas</td>
+                    <td>38.0</td>
+                    <td>2</td>
+                    <td>RS</td>
+                    <td>Saudável</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">1920</th>
+                    <td>Tonin</td>
+                    <td>18</td>
+                    <td>M</td>
+                    <td>43</td>
+                    <td>Inexistentes</td>
+                    <td>38.5</td>
+                    <td>8</td>
+                    <td>MG</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">4340</th>
+                    <td>Tuzinha</td>
+                    <td>21</td>
+                    <td>F</td>
+                    <td>52</td>
+                    <td>Uniformes</td>
+                    <td>37.6</td>
+                    <td>1</td>
+                    <td>PE</td>
+                    <td>Saudável</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">2301</th>
+                    <td>Icara</td>
+                    <td>22</td>
+                    <td>F</td>
+                    <td>?</td>
+                    <td>Inexistentes</td>
+                    <td>38.0</td>
+                    <td>3</td>
+                    <td>RJ</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">1322</th>
+                    <td>Vitinha</td>
+                    <td>19</td>
+                    <td>F</td>
+                    <td>87</td>
+                    <td>Espalhadas</td>
+                    <td>39.0</td>
+                    <td>6</td>
+                    <td>AM</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">3027</th>
+                    <td>Gabriel</td>
+                    <td>34</td>
+                    <td>M</td>
+                    <td>67</td>
+                    <td>Uniformes</td>
+                    <td>38.4</td>
+                    <td>2</td>
+                    <td>GO</td>
+                    <td>Saudável</td>
+                </tr>
+
+            </tbody>
+        </table>
 
         <p>
             <strong>Colunas:</strong> Cada coluna é uma tupla com as características (também chamados de atributos,
@@ -211,87 +328,551 @@
         </p>
 
 
-        |Id. |Nome |`Idade` |Sexo |Peso |Manchas |Temp. |# Int. |Est. |Diagnóstico
-        |-|-|-|-|-|-|-|-|-|-|
-        |4201 |Igor |`28` |M |79 |Concentradas |38.0 |2 |SP |Doente
-        |3217 |Moutinha |`18` |F |67 |Inexistentes |39.5 |4 |MG |Doente
-        |4039 |Perot |`49` |M |92 |Espalhadas |38.0 |2 |RS |Saudável
-        |1920 |Tonin |`18` |M |43 |Inexistentes |38.5 |8 |MG |Doente
-        |4340 |Tuzinha |`21` |F |52 |Uniformes |37.6 |1 |PE |Saudável
-        |2301 |Icara |`22` |F |? |Inexistentes |38.0 |3 |RJ |Doente
-        |1322 |Vitinha |`19` |F |87 |Espalhadas |39.0 |6 |AM |Doente
-        |3027 |Gabriel |`34` |M |67 |Uniformes |38.4 |2 |GO |Saudável
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col" class="bg-info text-white">id</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col" class="bg-info text-white">Idade</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col" class="bg-info text-white">Peso</th>
+                    <th scope="col">Manchas</th>
+                    <th scope="col" class="bg-info text-white">Temperatura</th>
+                    <th scope="col">N&ordm; Int</th>
+                    <th scope="col" class="bg-info text-white">Est.</th>
+                    <th scope="col">Diagnóstico</th>
+                </tr>
+            </thead>
 
+            <tbody>
+                <tr>
+                    <th scope="row" class="bg-info text-white">4201</th>
+                    <td>Igor</td>
+                    <td class="bg-info text-white">28</td>
+                    <td>M</td>
+                    <td class="bg-info text-white">79</td>
+                    <td>Concentradas</td>
+                    <td class="bg-info text-white">38.0</td>
+                    <td>2</td>
+                    <td class="bg-info text-white">SP</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">3217</th>
+                    <td>Moutinha</td>
+                    <td class="bg-info text-white">18</td>
+                    <td>F</td>
+                    <td class="bg-info text-white">67</td>
+                    <td>Inexistentes</td>
+                    <td class="bg-info text-white">39.5</td>
+                    <td>4</td>
+                    <td class="bg-info text-white">MG</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">4039</th>
+                    <td>Perot</td>
+                    <td class="bg-info text-white">49</td>
+                    <td>M</td>
+                    <td class="bg-info text-white">92</td>
+                    <td>Espalhadas</td>
+                    <td class="bg-info text-white">38.0</td>
+                    <td>2</td>
+                    <td class="bg-info text-white">RS</td>
+                    <td>Saudável</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">1920</th>
+                    <td>Tonin</td>
+                    <td class="bg-info text-white">18</td>
+                    <td>M</td>
+                    <td class="bg-info text-white">43</td>
+                    <td>Inexistentes</td>
+                    <td class="bg-info text-white">38.5</td>
+                    <td>8</td>
+                    <td class="bg-info text-white">MG</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">4340</th>
+                    <td>Tuzinha</td>
+                    <td class="bg-info text-white">21</td>
+                    <td>F</td>
+                    <td class="bg-info text-white">52</td>
+                    <td>Uniformes</td>
+                    <td class="bg-info text-white">37.6</td>
+                    <td>1</td>
+                    <td class="bg-info text-white">PE</td>
+                    <td>Saudável</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">2301</th>
+                    <td>Icara</td>
+                    <td class="bg-info text-white">22</td>
+                    <td>F</td>
+                    <td class="bg-info text-white">?</td>
+                    <td>Inexistentes</td>
+                    <td class="bg-info text-white">38.0</td>
+                    <td>3</td>
+                    <td class="bg-info text-white">RJ</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">1322</th>
+                    <td>Vitinha</td>
+                    <td class="bg-info text-white">19</td>
+                    <td>F</td>
+                    <td class="bg-info text-white">87</td>
+                    <td>Espalhadas</td>
+                    <td class="bg-info text-white">39.0</td>
+                    <td>6</td>
+                    <td class="bg-info text-white">AM</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">3027</th>
+                    <td>Gabriel</td>
+                    <td class="bg-info text-white">34</td>
+                    <td>M</td>
+                    <td class="bg-info text-white">67</td>
+                    <td>Uniformes</td>
+                    <td class="bg-info text-white">38.4</td>
+                    <td>2</td>
+                    <td class="bg-info text-white">GO</td>
+                    <td>Saudável</td>
+                </tr>
+
+            </tbody>
+        </table>
         <p>
             <strong>Linhas:</strong> Cada linha é refere a um dado (também chamado de objeto, exemplo, registro, padrão,
             etc).
         </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col">Peso</th>
+                    <th scope="col">Manchas</th>
+                    <th scope="col">Temperatura</th>
+                    <th scope="col">N&ordm; Int</th>
+                    <th scope="col">Est.</th>
+                    <th scope="col">Diagn&oacute;stico</th>
+                </tr>
+            </thead>
 
-        |Id. |Nome |Idade |Sexo |Peso |Manchas |Temp. |# Int. |Est. |Diagnóstico
-        |-|-|-|-|-|-|-|-|-|-|
-        |4201 |Igor |28 |M |79 |Concentradas |38.0 |2 |SP |Doente
-        |3217 |Moutinha |18 |F |67 |Inexistentes |39.5 |4 |MG |Doente
-        |`4039` |`Perot` |`49` |`M` |`92` |`Espalhadas` |`38.0` |`2` |`RS` |`Saudável`
-        |1920 |Tonin |18 |M |43 |Inexistentes |38.5 |8 |MG |Doente
-        |4340 |Tuzinha |21 |F |52 |Uniformes |37.6 |1 |PE |Saudável
-        |2301 |Icara |22 |F |? |Inexistentes |38.0 |3 |RJ |Doente
-        |1322 |Vitinha |19 |F |87 |Espalhadas |39.0 |6 |AM |Doente
-        |3027 |Gabriel |34 |M |67 |Uniformes |38.4 |2 |GO |Saudável
+            <tbody>
+                <tr class="bg-info text-white">
+                    <th scope="row">4201</th>
+                    <td>Igor</td>
+                    <td>28</td>
+                    <td>M</td>
+                    <td>79</td>
+                    <td>Concentradas</td>
+                    <td>38.0</td>
+                    <td>2</td>
+                    <td>SP</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">3217</th>
+                    <td>Moutinha</td>
+                    <td>18</td>
+                    <td>F</td>
+                    <td>67</td>
+                    <td>Inexistentes</td>
+                    <td>39.5</td>
+                    <td>4</td>
+                    <td>MG</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr class="bg-info text-white">
+                    <th scope="row">4039</th>
+                    <td>Perot</td>
+                    <td>49</td>
+                    <td>M</td>
+                    <td>92</td>
+                    <td>Espalhadas</td>
+                    <td>38.0</td>
+                    <td>2</td>
+                    <td>RS</td>
+                    <td>Saudável</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">1920</th>
+                    <td>Tonin</td>
+                    <td>18</td>
+                    <td>M</td>
+                    <td>43</td>
+                    <td>Inexistentes</td>
+                    <td>38.5</td>
+                    <td>8</td>
+                    <td>MG</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr class="bg-info text-white">
+                    <th scope="row">4340</th>
+                    <td>Tuzinha</td>
+                    <td>21</td>
+                    <td>F</td>
+                    <td>52</td>
+                    <td>Uniformes</td>
+                    <td>37.6</td>
+                    <td>1</td>
+                    <td>PE</td>
+                    <td>Saudável</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">2301</th>
+                    <td>Icara</td>
+                    <td>22</td>
+                    <td>F</td>
+                    <td>?</td>
+                    <td>Inexistentes</td>
+                    <td>38.0</td>
+                    <td>3</td>
+                    <td>RJ</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr class="bg-info text-white">
+                    <th scope="row">1322</th>
+                    <td>Vitinha</td>
+                    <td>19</td>
+                    <td>F</td>
+                    <td>87</td>
+                    <td>Espalhadas</td>
+                    <td>39.0</td>
+                    <td>6</td>
+                    <td>AM</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">3027</th>
+                    <td>Gabriel</td>
+                    <td>34</td>
+                    <td>M</td>
+                    <td>67</td>
+                    <td>Uniformes</td>
+                    <td>38.4</td>
+                    <td>2</td>
+                    <td>GO</td>
+                    <td>Saudável</td>
+                </tr>
+
+            </tbody>
+        </table>
 
         <p>
             Aqui, vemos que cada registro é um paciente, composto por diversas caracteristicas que o definem.
         </p>
 
         <p>
-            <strong>Atributo de saída:</strong> Presente em algumas tarefas (aprendizado supervisionado), seus valores
-            devem ser estimados usando outros atributos (predizê-los através das caracteristicas de todo conjunto que
-            foi utilizado para treinar a máquina). Também pode ser chamado de meta ou alvo, e cada valor que pode ser
-            atribuído nessa característica recebe o nome de <strong>rótulo</strong> (rótulos do exemplo: saudável ou
-            doente).
+            <strong>Atributo de saída:</strong> Presente em algumas tarefas (aprendizado supervisionado), seus valores devem ser estimados usando outros atributos (predizê-los através das caracteristicas de todo conjunto que foi utilizado para treinar a máquina). Também pode ser chamado de meta ou alvo, e cada valor que pode ser atribuído nessa característica recebe o nome de <strong>rótulo</strong> (rótulos do exemplo: saudável ou doente).
         </p>
 
-        |Id. |Nome |Idade |Sexo |Peso |Manchas |Temp. |# Int. |Est. |`Diagnóstico`
-        |-|-|-|-|-|-|-|-|-|-|
-        |4201 |Igor |28 |M |79 |Concentradas |38.0 |2 |SP |`Doente`
-        |3217 |Moutinha |18 |F |67 |Inexistentes |39.5 |4 |MG |`Doente`
-        |4039 |Perot |49 |M |92 |Espalhadas |38.0 |2 |RS |` Saudável`
-        |1920 |Tonin |18 |M |43 |Inexistentes |38.5 |8 |MG |`Doente`
-        |4340 |Tuzinha |21 |F |52 |Uniformes |37.6 |1 |PE |`Saudável`
-        |2301 |Icara |22 |F |? |Inexistentes |38.0 |3 |RJ |`Doente`
-        |1322 |Vitinha |19 |F |87 |Espalhadas |39.0 |6 |AM |`Doente`
-        |3027 |Gabriel |34 |M |67 |Uniformes |38.4 |2 |GO |`Saudável`
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col">Peso</th>
+                    <th scope="col">Manchas</th>
+                    <th scope="col">Temperatura</th>
+                    <th scope="col">N&ordm; Int</th>
+                    <th scope="col">Est.</th>
+                    <th scope="col" class="bg-info text-white">Diagn&oacute;stico</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">4201</th>
+                    <td>Igor</td>
+                    <td>28</td>
+                    <td>M</td>
+                    <td>79</td>
+                    <td>Concentradas</td>
+                    <td>38.0</td>
+                    <td>2</td>
+                    <td>SP</td>
+                    <td class="bg-info text-white">Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">3217</th>
+                    <td>Moutinha</td>
+                    <td>18</td>
+                    <td>F</td>
+                    <td>67</td>
+                    <td>Inexistentes</td>
+                    <td>39.5</td>
+                    <td>4</td>
+                    <td>MG</td>
+                    <td class="bg-info text-white">Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">4039</th>
+                    <td>Perot</td>
+                    <td>49</td>
+                    <td>M</td>
+                    <td>92</td>
+                    <td>Espalhadas</td>
+                    <td>38.0</td>
+                    <td>2</td>
+                    <td>RS</td>
+                    <td class="bg-info text-white">Saudável</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">1920</th>
+                    <td>Tonin</td>
+                    <td>18</td>
+                    <td>M</td>
+                    <td>43</td>
+                    <td>Inexistentes</td>
+                    <td>38.5</td>
+                    <td>8</td>
+                    <td>MG</td>
+                    <td class="bg-info text-white">Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">4340</th>
+                    <td>Tuzinha</td>
+                    <td>21</td>
+                    <td>F</td>
+                    <td>52</td>
+                    <td>Uniformes</td>
+                    <td>37.6</td>
+                    <td>1</td>
+                    <td>PE</td>
+                    <td class="bg-info text-white">Saudável</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">2301</th>
+                    <td>Icara</td>
+                    <td>22</td>
+                    <td>F</td>
+                    <td>?</td>
+                    <td>Inexistentes</td>
+                    <td>38.0</td>
+                    <td>3</td>
+                    <td>RJ</td>
+                    <td class="bg-info text-white">Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">1322</th>
+                    <td>Vitinha</td>
+                    <td>19</td>
+                    <td>F</td>
+                    <td>87</td>
+                    <td>Espalhadas</td>
+                    <td>39.0</td>
+                    <td>6</td>
+                    <td>AM</td>
+                    <td class="bg-info text-white">Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">3027</th>
+                    <td>Gabriel</td>
+                    <td>34</td>
+                    <td>M</td>
+                    <td>67</td>
+                    <td>Uniformes</td>
+                    <td>38.4</td>
+                    <td>2</td>
+                    <td>GO</td>
+                    <td class="bg-info text-white">Saudável</td>
+                </tr>
+
+            </tbody>
+        </table>
 
         <h3> Pré-processamento </h3>
         <p>
-            O pré-processamento é um tópico que necessita de ser aprofundado à parte. Mesmo assim, é importante discutir
-            o valor dele no início desse trabalho com o conjunto de dados. Nesse exemplo, temos uma quantidade pequena
-            de registros para uma apresentação, Porém, nem sempre é assim que os cojuntos estão. Muitas vezes é possível
-            ter milhões ou milhares de registros.
+            O pré-processamento é um tópico que necessita de ser aprofundado à parte. Mesmo assim, é importante discutir o valor dele no início desse trabalho com o conjunto de dados. Nesse exemplo, temos uma quantidade pequena de registros para uma apresentação, Porém, nem sempre é assim que os cojuntos estão. Muitas vezes é possível ter milhões ou milhares de registros.
             <br>
-            Com uma quantidade tão imensa de dados, é preciso ter inteligência quando os mesmos forem passados para o
-            treino. Exemplo: O nome e o id de cada paciente de nada influencia o resultado do seu diagnóstico. Assim, os
-            mesmos podem ser ignorados tanto pelo motivo de economizar espaço e ganhar velocidade quanto para não gerar
-            correlações erradas (como descobrir que 90% dos Joãos podem estar doentes, mesmo sabendo que adoecer não tem
-            uma influência direta do nome do paciente).
+            Com uma quantidade tão imensa de dados, é preciso ter inteligência quando os mesmos forem passados para o treino (nesse caso, é claro. Estudos de outros conjuntos de dados podem ter relevância para alguma correlação). Por exemplo: o nome e o id de cada paciente de nada influencia o resultado do seu diagnóstico. Assim, os mesmos podem ser ignorados tanto pelo motivo de economizar espaço e ganhar velocidade quanto para não gerar correlações erradas (como descobrir que 90% dos Joãos podem estar doentes, mesmo sabendo que adoecer não tem uma influência direta do nome do paciente).
             <br>
-            Outros fatores importantes para o pré-processamento.
+            Outros fatores importantes para o pré-processamento:
         </p>
 
-        ```diff
-        - COLOCAR DADOS DO SEGUNDO SLIDE
-        dados faltantes
-        ```
+        <div class="p-3 mb-2 bg-danger text-white"> COLOCAR DADOS DO SEGUNDO SLIDE <br> DADOS FALTANTES</div>
 
-        |`Id.` |`Nome` |Idade |Sexo |Peso |Manchas |Temp. |# Int. |Est. |Diagnóstico
-        |-|-|-|-|-|-|-|-|-|-|
-        |`4201` |`Igor` |28 |M |79 |Concentradas |38.0 |2 |SP |Doente
-        |`3217` |`Moutinha` |18 |F |67 |Inexistentes |39.5 |4 |MG |Doente
-        |`4039` |`Perot` |49 |M |92 |Espalhadas |38.0 |2 |RS |Saudável
-        |`1920` |`Tonin` |18 |M |43 |Inexistentes |38.5 |8 |MG |Doente
-        |`4340` |`Tuzinha` |21 |F |52 |Uniformes |37.6 |1 |PE |Saudável
-        |`2301` |`Icara` |22 |F |`?` |Inexistentes |38.0 |3 |RJ |`Doente
-        |`1322` |`Vitinha` |19 |F |87 |Espalhadas |39.0 |6 |AM |Doente
-        |`3027` |`Gabriel` |34 |M |67 |Uniformes |38.4 |2 |GO |Saudável
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col" class="bg-info text-white">id</th>
+                    <th scope="col" class="bg-info text-white">Nome</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col">Peso</th>
+                    <th scope="col">Manchas</th>
+                    <th scope="col">Temperatura</th>
+                    <th scope="col">N&ordm; Int</th>
+                    <th scope="col">Est.</th>
+                    <th scope="col">Diagn&oacute;stico</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row" class="bg-info text-white">4201</th>
+                    <td class="bg-info text-white">Igor</td>
+                    <td>28</td>
+                    <td>M</td>
+                    <td>79</td>
+                    <td>Concentradas</td>
+                    <td>38.0</td>
+                    <td>2</td>
+                    <td>SP</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">3217</th>
+                    <td class="bg-info text-white">Moutinha</td>
+                    <td>18</td>
+                    <td>F</td>
+                    <td>67</td>
+                    <td>Inexistentes</td>
+                    <td>39.5</td>
+                    <td>4</td>
+                    <td>MG</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">4039</th>
+                    <td class="bg-info text-white">Perot</td>
+                    <td>49</td>
+                    <td>M</td>
+                    <td>92</td>
+                    <td>Espalhadas</td>
+                    <td>38.0</td>
+                    <td>2</td>
+                    <td>RS</td>
+                    <td>Saudável</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">1920</th>
+                    <td class="bg-info text-white">Tonin</td>
+                    <td>18</td>
+                    <td>M</td>
+                    <td>43</td>
+                    <td>Inexistentes</td>
+                    <td>38.5</td>
+                    <td>8</td>
+                    <td>MG</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">4340</th>
+                    <td class="bg-info text-white">Tuzinha</td>
+                    <td>21</td>
+                    <td>F</td>
+                    <td>52</td>
+                    <td>Uniformes</td>
+                    <td>37.6</td>
+                    <td>1</td>
+                    <td>PE</td>
+                    <td>Saudável</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">2301</th>
+                    <td class="bg-info text-white">Icara</td>
+                    <td>22</td>
+                    <td>F</td>
+                    <td class="bg-info text-white">?</td>
+                    <td>Inexistentes</td>
+                    <td>38.0</td>
+                    <td>3</td>
+                    <td>RJ</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">1322</th>
+                    <td class="bg-info text-white">Vitinha</td>
+                    <td>19</td>
+                    <td>F</td>
+                    <td>87</td>
+                    <td>Espalhadas</td>
+                    <td>39.0</td>
+                    <td>6</td>
+                    <td>AM</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">3027</th>
+                    <td class="bg-info text-white">Gabriel</td>
+                    <td>34</td>
+                    <td>M</td>
+                    <td>67</td>
+                    <td>Uniformes</td>
+                    <td>38.4</td>
+                    <td>2</td>
+                    <td>GO</td>
+                    <td>Saudável</td>
+                </tr>
+
+            </tbody>
+        </table>
 
 
         <h2> Variáveis numéricas </h2>
