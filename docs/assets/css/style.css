@@ -1,0 +1,47 @@
+ul {
+    list-style: none;
+}
+
+ul .ready:before {
+    content: '✔';
+    color: rgb(31, 110, 0);
+}
+
+ul .unready:before {
+    content: '✘';
+    color: #BF0603;
+}
+
+ul a {
+    cursor: pointer;
+    color:black;
+}
+
+ul a:hover {
+    cursor: pointer;
+    color: #0275d8;
+    text-decoration: none;
+}
+
+ul .disable {
+    pointer-events: none;
+
+}
+
+ol .disable {
+    pointer-events: none;
+    color:black;
+
+}
+
+body h1 {
+    font-size: 4vh;
+}
+
+body h2 {
+    font-size: 3vh;
+}
+
+body h3 {
+    font-size: 2.5vh;
+}
