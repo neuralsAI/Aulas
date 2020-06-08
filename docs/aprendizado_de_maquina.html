@@ -1,0 +1,964 @@
+<html>
+
+<head>
+
+    <!-- CSS only -->
+    <title> IA Neurals</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark px-5">
+        <a class="navbar-brand" href="index.html">IA Neurals</a>
+        <a class="navbar-brand" href="index.html">Voltar</a>
+    </nav>
+
+    <div class="container py-5 ">
+
+        <h1> Aprendizado de máquina </h1>
+        <ul>
+            <li> Busca automatizar o processo de aquisição de conhecimento. </li>
+            <li> Algumas tarefas são melhor definidas e/ou executadas a partir de exemplos (como reconhecimento facial).
+            </li>
+            <li> O ser humano não é capaz de explicar nem programar sua habilidade para executar algumas tarefas (como
+                dirigir ou andar de bicicleta). </li>
+            <li> A quantidade de conhecimento disponível pode ser muito grande para ser descrito por humanos (Era do big
+                data). </li>
+            <li> Algumas tarefas exigem cálculos complexos, possíveis apenas com computador (busca por correlação).
+            </li>
+        </ul>
+
+        <h2> O que é aprendizado de máquina? </h2>
+        <p>
+            O ramo do aprendizado de máquina busca encontrar um reconhecimento de padrões dado uma entrada de dados.
+            <br>
+            É importante levar em conta alguns tópicos nos campos dos estudos de filosofia, neurociência e psicologia
+            para uma compreensão melhor do todo.
+        </p>
+
+        <p>
+            A definição fornecida por Mitchell diz que:
+            “Um programa aprende a partir da experiência <strong>E</strong>strong>, em uma relação a uma classe de
+            tarefas <strong>T</strong>, com medida de desempenho <strong>P</strong>, se seu desempenho em
+            <strong>T</strong>, medido por <strong>P</strong>, melhora com <strong>E</strong>.”
+        </p>
+
+        <p>
+            <strong>Exemplo:</strong> Filtrar mensagens de e-mail:
+            <ul>
+                <li> <strong>Tarefa T:</strong> Categorizar mensagens de e-mail como spam ou legítima. </li>
+                <li> <strong>Medida de desempenho P:</strong> Porcentagem de mensagens de spam e legítimas corretamente
+                    identificadas. </li>
+                <li> <strong>Experiência E:</strong> Conjunto de e-mails apontados pelo usuário como spams. </li>
+            </ul>
+        </p>
+
+        <h3> Inteligência </h3>
+        <p>
+            Algumas literaturas definem inteligência como a capacidade de alguém/algo para compreender e resolver novos
+            problemas, sejam eles:
+        </p>
+        <ul>
+            <li> Lógica; </li>
+            <li> Abstração; </li>
+            <li> Memorização; </li>
+            <li> Compreensão; </li>
+            <li> Comunicação; </li>
+            <li> Aprendizado; </li>
+            <li> Resolução de problemas. </li>
+        </ul>
+
+        <h3> Percepção </h3>
+        <p>
+            Faculdade de apreender por meio dos sentidos ou da mente.
+        </p>
+
+        <h3> Cognição </h3>
+        <p>
+            Processo ou faculdade de adquirir um conhecimento.
+        </p>
+
+        <h3> Experiência </h3>
+        <p>
+            Qualquer conhecimento obtido por meio dos sentidos.
+        </p>
+
+        <h3> Aprendizado </h3>
+        <p>
+            Aprendizado é o processo pelo qual as competências, habilidades ou conhecimentos são adquiridos ou
+            modificados, como resultado de estudo, experiência, raciocínio e observação.
+        </p>
+        <h3> Treino </h3>
+        <p>
+            Treino é a tentativa de melhorar o desempenho em certas habilidades.
+        </p>
+
+        <h3> Inteligência artificial </h3>
+        <p>
+            Abordagens do estudo de inteligência artificial se dividem em 4 categorias:
+        </p>
+        <ul>
+            <li> Sistemas que pensam como humanos; </li>
+            <li> Sistemas que pensam racionalmente; </li>
+            <li> Sistemas que agem como humanos; </li>
+            <li> Sistemas que agem racionalmente. </li>
+        </ul>
+
+        <p>
+            O foco da inteligência artificial é ensinar a máquina na execução de tomada de decisões. Um framework nada
+            científico (que compila alguns científicos e uma tentativa de deixar mais claro os pontos mas que deixa mais
+            complexo).
+        </p>
+
+
+        <img src="./assets/aprendizado_de_maquina/framework.png" class="img-fluid py-3 rounded mx-auto d-block"
+            alt="framework image">
+
+        <ul>
+            <li> Busca </li>
+            <li> Conhecimento </li>
+            <li> Experiência </li>
+        </ul>
+
+        <ol>
+            <li> Busca + Estudo = Conhecimento </li>
+            <li> Conhecimento + Aprendizagem = Experiência </li>
+            <li> Experiência + Treino = Busca </li>
+        </ol>
+
+        <h3> Inferência indutiva </h3>
+        <p>
+            Raciocínio para obter conclusões sobre todos os membros de uma classe pelo exame de alguns membros da
+            classe.
+            <br>
+
+            <strong>Exemplo:</strong> 1 + 3 + 5 + 7 + 9 + + … + (2k-1) + (2k+1) = (k + 1)²
+            <br>
+            Os passos necessários para uma boa indução são:
+            <ul>
+                <li> Testar o Passo Base; </li>
+                <li> Assumir uma hipótese de indução; </li>
+                <li> Testar o Passo indutivo. </li>
+            </ul>
+
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col">K</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>PB</td>
+                        <td>0</td>
+                        <td>1 = 1</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>HI</td>
+                        <td>n</td>
+                        <td>1 + 3 + …. + (2n+1) = (n + 1)²</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>PI</td>
+                        <td>n+1</td>
+                        <td>1 + 3 + …. + (2(n+1)+1) = ((n+1) + 1)²</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </p>
+
+
+        <h3> Conjunto de dados </h3>
+        <p>
+            O conjunto de dados é um arquivo de qualquer tipo (texto, áudio, vídeo, planilhas, etc) que possuem dados e
+            esses, após uma certa adequação, levantamento de hipóteses, fornecem de alguma maneira uma informação
+            relevante para alcançar um fato.
+            Todos algoritmos de aprendizado de máquina possuem uma entrada de dados específicas, e por vezes um conjunto
+            de dados precisa ser ajustado para se tornarem dados que podem ser consumidos pelo mesmo.
+            <br>
+            A maneira mais comum é tornar esses dados em tabulares (que nada mais é que os transformar em tabelas).
+        </p>
+        <p>
+            <strong>Exemplo:</strong> Um conjunto de dados de um hospital.
+            <br>
+            <strong>Meta:</strong> Induzir hipóteses para fazer diagnósticos corretos para novos pacientes
+        </p>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col">Peso</th>
+                    <th scope="col">Manchas</th>
+                    <th scope="col">Temperatura</th>
+                    <th scope="col">N&ordm; Int</th>
+                    <th scope="col">Est.</th>
+                    <th scope="col">Diagn&oacute;stico</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">4201</th>
+                    <td>Igor</td>
+                    <td>28</td>
+                    <td>M</td>
+                    <td>79</td>
+                    <td>Concentradas</td>
+                    <td>38.0</td>
+                    <td>2</td>
+                    <td>SP</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">3217</th>
+                    <td>Moutinha</td>
+                    <td>18</td>
+                    <td>F</td>
+                    <td>67</td>
+                    <td>Inexistentes</td>
+                    <td>39.5</td>
+                    <td>4</td>
+                    <td>MG</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">4039</th>
+                    <td>Perot</td>
+                    <td>49</td>
+                    <td>M</td>
+                    <td>92</td>
+                    <td>Espalhadas</td>
+                    <td>38.0</td>
+                    <td>2</td>
+                    <td>RS</td>
+                    <td>Saudável</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">1920</th>
+                    <td>Tonin</td>
+                    <td>18</td>
+                    <td>M</td>
+                    <td>43</td>
+                    <td>Inexistentes</td>
+                    <td>38.5</td>
+                    <td>8</td>
+                    <td>MG</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">4340</th>
+                    <td>Tuzinha</td>
+                    <td>21</td>
+                    <td>F</td>
+                    <td>52</td>
+                    <td>Uniformes</td>
+                    <td>37.6</td>
+                    <td>1</td>
+                    <td>PE</td>
+                    <td>Saudável</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">2301</th>
+                    <td>Icara</td>
+                    <td>22</td>
+                    <td>F</td>
+                    <td>?</td>
+                    <td>Inexistentes</td>
+                    <td>38.0</td>
+                    <td>3</td>
+                    <td>RJ</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">1322</th>
+                    <td>Vitinha</td>
+                    <td>19</td>
+                    <td>F</td>
+                    <td>87</td>
+                    <td>Espalhadas</td>
+                    <td>39.0</td>
+                    <td>6</td>
+                    <td>AM</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">3027</th>
+                    <td>Gabriel</td>
+                    <td>34</td>
+                    <td>M</td>
+                    <td>67</td>
+                    <td>Uniformes</td>
+                    <td>38.4</td>
+                    <td>2</td>
+                    <td>GO</td>
+                    <td>Saudável</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <p>
+            <strong>Colunas:</strong> Cada coluna é uma tupla com as características (também chamados de atributos,
+            campos, variáveis, etc) que descrevem seus objetos.
+        </p>
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col" class="bg-info text-white">id</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col" class="bg-info text-white">Idade</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col" class="bg-info text-white">Peso</th>
+                    <th scope="col">Manchas</th>
+                    <th scope="col" class="bg-info text-white">Temperatura</th>
+                    <th scope="col">N&ordm; Int</th>
+                    <th scope="col" class="bg-info text-white">Est.</th>
+                    <th scope="col">Diagnóstico</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row" class="bg-info text-white">4201</th>
+                    <td>Igor</td>
+                    <td class="bg-info text-white">28</td>
+                    <td>M</td>
+                    <td class="bg-info text-white">79</td>
+                    <td>Concentradas</td>
+                    <td class="bg-info text-white">38.0</td>
+                    <td>2</td>
+                    <td class="bg-info text-white">SP</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">3217</th>
+                    <td>Moutinha</td>
+                    <td class="bg-info text-white">18</td>
+                    <td>F</td>
+                    <td class="bg-info text-white">67</td>
+                    <td>Inexistentes</td>
+                    <td class="bg-info text-white">39.5</td>
+                    <td>4</td>
+                    <td class="bg-info text-white">MG</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">4039</th>
+                    <td>Perot</td>
+                    <td class="bg-info text-white">49</td>
+                    <td>M</td>
+                    <td class="bg-info text-white">92</td>
+                    <td>Espalhadas</td>
+                    <td class="bg-info text-white">38.0</td>
+                    <td>2</td>
+                    <td class="bg-info text-white">RS</td>
+                    <td>Saudável</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">1920</th>
+                    <td>Tonin</td>
+                    <td class="bg-info text-white">18</td>
+                    <td>M</td>
+                    <td class="bg-info text-white">43</td>
+                    <td>Inexistentes</td>
+                    <td class="bg-info text-white">38.5</td>
+                    <td>8</td>
+                    <td class="bg-info text-white">MG</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">4340</th>
+                    <td>Tuzinha</td>
+                    <td class="bg-info text-white">21</td>
+                    <td>F</td>
+                    <td class="bg-info text-white">52</td>
+                    <td>Uniformes</td>
+                    <td class="bg-info text-white">37.6</td>
+                    <td>1</td>
+                    <td class="bg-info text-white">PE</td>
+                    <td>Saudável</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">2301</th>
+                    <td>Icara</td>
+                    <td class="bg-info text-white">22</td>
+                    <td>F</td>
+                    <td class="bg-info text-white">?</td>
+                    <td>Inexistentes</td>
+                    <td class="bg-info text-white">38.0</td>
+                    <td>3</td>
+                    <td class="bg-info text-white">RJ</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">1322</th>
+                    <td>Vitinha</td>
+                    <td class="bg-info text-white">19</td>
+                    <td>F</td>
+                    <td class="bg-info text-white">87</td>
+                    <td>Espalhadas</td>
+                    <td class="bg-info text-white">39.0</td>
+                    <td>6</td>
+                    <td class="bg-info text-white">AM</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">3027</th>
+                    <td>Gabriel</td>
+                    <td class="bg-info text-white">34</td>
+                    <td>M</td>
+                    <td class="bg-info text-white">67</td>
+                    <td>Uniformes</td>
+                    <td class="bg-info text-white">38.4</td>
+                    <td>2</td>
+                    <td class="bg-info text-white">GO</td>
+                    <td>Saudável</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <p>
+            <strong>Linhas:</strong> Cada linha é refere a um dado (também chamado de objeto, exemplo, registro, padrão,
+            etc).
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col">Peso</th>
+                    <th scope="col">Manchas</th>
+                    <th scope="col">Temperatura</th>
+                    <th scope="col">N&ordm; Int</th>
+                    <th scope="col">Est.</th>
+                    <th scope="col">Diagn&oacute;stico</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="bg-info text-white">
+                    <th scope="row">4201</th>
+                    <td>Igor</td>
+                    <td>28</td>
+                    <td>M</td>
+                    <td>79</td>
+                    <td>Concentradas</td>
+                    <td>38.0</td>
+                    <td>2</td>
+                    <td>SP</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">3217</th>
+                    <td>Moutinha</td>
+                    <td>18</td>
+                    <td>F</td>
+                    <td>67</td>
+                    <td>Inexistentes</td>
+                    <td>39.5</td>
+                    <td>4</td>
+                    <td>MG</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr class="bg-info text-white">
+                    <th scope="row">4039</th>
+                    <td>Perot</td>
+                    <td>49</td>
+                    <td>M</td>
+                    <td>92</td>
+                    <td>Espalhadas</td>
+                    <td>38.0</td>
+                    <td>2</td>
+                    <td>RS</td>
+                    <td>Saudável</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">1920</th>
+                    <td>Tonin</td>
+                    <td>18</td>
+                    <td>M</td>
+                    <td>43</td>
+                    <td>Inexistentes</td>
+                    <td>38.5</td>
+                    <td>8</td>
+                    <td>MG</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr class="bg-info text-white">
+                    <th scope="row">4340</th>
+                    <td>Tuzinha</td>
+                    <td>21</td>
+                    <td>F</td>
+                    <td>52</td>
+                    <td>Uniformes</td>
+                    <td>37.6</td>
+                    <td>1</td>
+                    <td>PE</td>
+                    <td>Saudável</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">2301</th>
+                    <td>Icara</td>
+                    <td>22</td>
+                    <td>F</td>
+                    <td>?</td>
+                    <td>Inexistentes</td>
+                    <td>38.0</td>
+                    <td>3</td>
+                    <td>RJ</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr class="bg-info text-white">
+                    <th scope="row">1322</th>
+                    <td>Vitinha</td>
+                    <td>19</td>
+                    <td>F</td>
+                    <td>87</td>
+                    <td>Espalhadas</td>
+                    <td>39.0</td>
+                    <td>6</td>
+                    <td>AM</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">3027</th>
+                    <td>Gabriel</td>
+                    <td>34</td>
+                    <td>M</td>
+                    <td>67</td>
+                    <td>Uniformes</td>
+                    <td>38.4</td>
+                    <td>2</td>
+                    <td>GO</td>
+                    <td>Saudável</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <p>
+            Aqui, vemos que cada registro é um paciente, composto por diversas caracteristicas que o definem.
+        </p>
+
+        <p>
+            <strong>Atributo de saída:</strong> Presente em algumas tarefas (aprendizado supervisionado), seus valores
+            devem ser estimados usando outros atributos (predizê-los através das caracteristicas de todo conjunto que
+            foi utilizado para treinar a máquina). Também pode ser chamado de meta ou alvo, e cada valor que pode ser
+            atribuído nessa característica recebe o nome de <strong>rótulo</strong> (rótulos do exemplo: saudável ou
+            doente).
+        </p>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col">Peso</th>
+                    <th scope="col">Manchas</th>
+                    <th scope="col">Temperatura</th>
+                    <th scope="col">N&ordm; Int</th>
+                    <th scope="col">Est.</th>
+                    <th scope="col" class="bg-info text-white">Diagn&oacute;stico</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">4201</th>
+                    <td>Igor</td>
+                    <td>28</td>
+                    <td>M</td>
+                    <td>79</td>
+                    <td>Concentradas</td>
+                    <td>38.0</td>
+                    <td>2</td>
+                    <td>SP</td>
+                    <td class="bg-info text-white">Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">3217</th>
+                    <td>Moutinha</td>
+                    <td>18</td>
+                    <td>F</td>
+                    <td>67</td>
+                    <td>Inexistentes</td>
+                    <td>39.5</td>
+                    <td>4</td>
+                    <td>MG</td>
+                    <td class="bg-info text-white">Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">4039</th>
+                    <td>Perot</td>
+                    <td>49</td>
+                    <td>M</td>
+                    <td>92</td>
+                    <td>Espalhadas</td>
+                    <td>38.0</td>
+                    <td>2</td>
+                    <td>RS</td>
+                    <td class="bg-info text-white">Saudável</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">1920</th>
+                    <td>Tonin</td>
+                    <td>18</td>
+                    <td>M</td>
+                    <td>43</td>
+                    <td>Inexistentes</td>
+                    <td>38.5</td>
+                    <td>8</td>
+                    <td>MG</td>
+                    <td class="bg-info text-white">Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">4340</th>
+                    <td>Tuzinha</td>
+                    <td>21</td>
+                    <td>F</td>
+                    <td>52</td>
+                    <td>Uniformes</td>
+                    <td>37.6</td>
+                    <td>1</td>
+                    <td>PE</td>
+                    <td class="bg-info text-white">Saudável</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">2301</th>
+                    <td>Icara</td>
+                    <td>22</td>
+                    <td>F</td>
+                    <td>?</td>
+                    <td>Inexistentes</td>
+                    <td>38.0</td>
+                    <td>3</td>
+                    <td>RJ</td>
+                    <td class="bg-info text-white">Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">1322</th>
+                    <td>Vitinha</td>
+                    <td>19</td>
+                    <td>F</td>
+                    <td>87</td>
+                    <td>Espalhadas</td>
+                    <td>39.0</td>
+                    <td>6</td>
+                    <td>AM</td>
+                    <td class="bg-info text-white">Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row">3027</th>
+                    <td>Gabriel</td>
+                    <td>34</td>
+                    <td>M</td>
+                    <td>67</td>
+                    <td>Uniformes</td>
+                    <td>38.4</td>
+                    <td>2</td>
+                    <td>GO</td>
+                    <td class="bg-info text-white">Saudável</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <h3> Pré-processamento </h3>
+        <p>
+            O pré-processamento é um tópico que necessita de ser aprofundado à parte. Mesmo assim, é importante discutir
+            o valor dele no início desse trabalho com o conjunto de dados. Nesse exemplo, temos uma quantidade pequena
+            de registros para uma apresentação, Porém, nem sempre é assim que os cojuntos estão. Muitas vezes é possível
+            ter milhões ou milhares de registros.
+            <br>
+            Com uma quantidade tão imensa de dados, é preciso ter inteligência quando os mesmos forem passados para o
+            treino (nesse caso, é claro. Estudos de outros conjuntos de dados podem ter relevância para alguma
+            correlação). Por exemplo: o nome e o id de cada paciente de nada influencia o resultado do seu diagnóstico.
+            Assim, os mesmos podem ser ignorados tanto pelo motivo de economizar espaço e ganhar velocidade quanto para
+            não gerar correlações erradas (como descobrir que 90% dos Joãos podem estar doentes, mesmo sabendo que
+            adoecer não tem uma influência direta do nome do paciente).
+            <br>
+            Outros fatores importantes para o pré-processamento:
+        </p>
+
+        <div class="p-3 mb-2 bg-danger text-white"> COLOCAR DADOS DO SEGUNDO SLIDE <br> DADOS FALTANTES</div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col" class="bg-info text-white">id</th>
+                    <th scope="col" class="bg-info text-white">Nome</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col">Peso</th>
+                    <th scope="col">Manchas</th>
+                    <th scope="col">Temperatura</th>
+                    <th scope="col">N&ordm; Int</th>
+                    <th scope="col">Est.</th>
+                    <th scope="col">Diagn&oacute;stico</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row" class="bg-info text-white">4201</th>
+                    <td class="bg-info text-white">Igor</td>
+                    <td>28</td>
+                    <td>M</td>
+                    <td>79</td>
+                    <td>Concentradas</td>
+                    <td>38.0</td>
+                    <td>2</td>
+                    <td>SP</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">3217</th>
+                    <td class="bg-info text-white">Moutinha</td>
+                    <td>18</td>
+                    <td>F</td>
+                    <td>67</td>
+                    <td>Inexistentes</td>
+                    <td>39.5</td>
+                    <td>4</td>
+                    <td>MG</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">4039</th>
+                    <td class="bg-info text-white">Perot</td>
+                    <td>49</td>
+                    <td>M</td>
+                    <td>92</td>
+                    <td>Espalhadas</td>
+                    <td>38.0</td>
+                    <td>2</td>
+                    <td>RS</td>
+                    <td>Saudável</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">1920</th>
+                    <td class="bg-info text-white">Tonin</td>
+                    <td>18</td>
+                    <td>M</td>
+                    <td>43</td>
+                    <td>Inexistentes</td>
+                    <td>38.5</td>
+                    <td>8</td>
+                    <td>MG</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">4340</th>
+                    <td class="bg-info text-white">Tuzinha</td>
+                    <td>21</td>
+                    <td>F</td>
+                    <td>52</td>
+                    <td>Uniformes</td>
+                    <td>37.6</td>
+                    <td>1</td>
+                    <td>PE</td>
+                    <td>Saudável</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">2301</th>
+                    <td class="bg-info text-white">Icara</td>
+                    <td>22</td>
+                    <td>F</td>
+                    <td class="bg-info text-white">?</td>
+                    <td>Inexistentes</td>
+                    <td>38.0</td>
+                    <td>3</td>
+                    <td>RJ</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">1322</th>
+                    <td class="bg-info text-white">Vitinha</td>
+                    <td>19</td>
+                    <td>F</td>
+                    <td>87</td>
+                    <td>Espalhadas</td>
+                    <td>39.0</td>
+                    <td>6</td>
+                    <td>AM</td>
+                    <td>Doente</td>
+                </tr>
+
+
+                <tr>
+                    <th scope="row" class="bg-info text-white">3027</th>
+                    <td class="bg-info text-white">Gabriel</td>
+                    <td>34</td>
+                    <td>M</td>
+                    <td>67</td>
+                    <td>Uniformes</td>
+                    <td>38.4</td>
+                    <td>2</td>
+                    <td>GO</td>
+                    <td>Saudável</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+        <h2> Variáveis numéricas </h2>
+
+        <h2> Variáveis categóricas </h2>
+
+        <h2> Aprendizado supervisionado </h2>
+
+        <h2> Aprendizado não supervisionado </h2>
+
+        <h2> Conceitos, entradas e atributos </h2>
+
+        <h2> Dados de treino e teste </h2>
+
+        <h2> Classificadores </h2>
+
+        <h2> Predição </h2>
+
+        <h2> Lift </h2>
+
+        <h2> Overfitting e underfitting </h2>
+
+        <h2> Viés & Variância </h2>
+
+        <h2> Árvores & Classificação </h2>
+
+        <h2> Avaliação de classificadores </h2>
+
+        <h2> Árvores de decisão </h2>
+
+        <h2> Boosting </h2>
+
+        <h2> Classificador Naïve Bayes </h2>
+
+        <h2> K-Vizinhos mais próximos </h2>
+
+        <h2> Regressão logistica </h2>
+
+        <h2> Ranqueamento </h2>
+
+        <h2> Regressão linear </h2>
+
+        <h2> Perceptron </h2>
+
+        <h2> Clusterização hierárquico </h2>
+
+        <h2> Clusterização K-means </h2>
+
+        <h2> Redes neurais </h2>
+
+        <h2> Análise de sentimentos </h2>
+
+        <h2> Collaborative Filtering </h2>
+
+        <h2> Tagging </h2>
+
+    </div>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
