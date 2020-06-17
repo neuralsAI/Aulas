@@ -12,6 +12,13 @@ ul .unready:before {
     color: #BF0603;
 }
 
+
+ul .doing:before {
+    content: '⌛';
+    color: rgb(130, 144, 0);
+}
+
+
 ul a {
     cursor: pointer;
     color:black;
